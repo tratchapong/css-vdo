@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex Lab 01</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body{
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .navigation {
+      display: flex;
+      list-style: none;
+      margin: 0; 
+      background: rgba(0, 191, 255, 0.3);
+    }
+    .navigation a {
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      color: white;
+    }
+    .navigation a:hover {
+      background: #1565C0;
+    }
+    main{
+      background-color: teal;
+      background-image: url(https://picsum.photos/id/1015/1200);
+      height: 80vh;
+      display : flex;
+    }
+    main > * {
+      /* outline: 1px dashed lime; */
+      flex : 1;
+    }
+    .main-l {
+      background-color: rgba(238, 130, 238, 0.527);
+    }
+    .main-r {
+      background-color: rgba(238, 130, 238, 0.527);
+    }
+    .main-c {
+      flex-grow: 4;
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      color: gold;
+    }
+    footer {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="navigation">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="main-l"></div>
+    <div class="main-c">
+      <h1>Title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis voluptas sequi accusantium doloribus repellendus ex error doloremque itaque amet, illo soluta veniam dolorum nobis.</p>
+    </div>
+    <div class="main-r"></div>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>

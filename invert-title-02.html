@@ -1,0 +1,54 @@
+<!-- inspired from : https://codepen.io/havardob/pen/PoPaWaE -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text with Div</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 60px;
+    width: 70%;
+    margin: 40vh auto;
+  }
+
+  .upper {
+    background-color: black;
+    color: white;
+    height: 1em;
+    /* overflow: hidden; */
+  }
+
+  .bottom {
+    background-color: white;
+    color: black;
+    height: 1em;
+    overflow: hidden;
+  }
+  
+  .bottom h2 {
+    position:relative;
+    bottom: 0.67em;
+  }
+
+</style>
+<body>
+  <div class="title">
+    <div class="upper">
+      <h2>I'm the one</h2>
+    </div>
+    <div class="bottom">
+      <h2>I'm the one</h2>
+    </div>
+  </div>
+</body>
+</html>

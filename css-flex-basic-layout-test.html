@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex Basic Layout</title>
+  <style>
+    * {margin: 0;padding: 0;box-sizing: border-box;}
+    html { background-color: wheat;}
+    body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    header {
+      height: 10vh;
+      background-color:teal;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    main {
+      height: 80vh;
+      /* background: green; */
+      display: flex;
+      flex-flow: wrap;
+    }
+    main > * {
+      /* border: 1px dashed lime; */
+      flex: 1 0 100px;
+    }
+    .logo {
+      background: url(https://picsum.photos/50);
+      width: 50px;
+      height: 50px;
+    }
+    .nav-wrapper {
+      align-self:flex-end;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 3px;
+      color: gold;
+    }
+    a:hover {
+      background: deeppink;
+    }
+    .main-c {
+      flex: 1 0 70%;
+      background-color: #569;
+      background-image: url(https://picsum.photos/800);
+      background-blend-mode : multiply;
+    }
+    footer {
+      background-color: skyblue;
+      height: 10vh;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style='display:flex; align-items:baseline;'>
+      <div class="logo"></div>
+      <h1>Header</h1>
+    </div>
+
+    <div class="nav-wrapper">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Help</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="main-l"></div>
+    <div class="main-c"></div>
+    <div class="main-r"></div>
+  </main>
+  <footer></footer>
+</body>
+</html>

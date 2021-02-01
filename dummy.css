@@ -1,0 +1,62 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  line-height: 1.7em;
+}
+
+
+.head {
+  color: whitesmoke;
+  height : 100px;
+  background-color: green;
+}
+.head > * {
+  margin : 10px 10px;
+}
+
+.menu {
+  display : inline-block;
+  width : 18%;
+  vertical-align: top;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding : 5px;
+  margin : 5px;
+  border : 1px dashed blue;
+}
+
+.menu li:hover {
+  color: lime;
+  cursor: pointer;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  margin-left: 15px;
+}
+
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  background-color: lightblue;
+  padding-right: 11px;
+  margin-top: 10px;
+}
+.footer {
+  border: 1px solid silver;
+  font-size: x-small;
+  margin-top: 10px;
+}
+
+

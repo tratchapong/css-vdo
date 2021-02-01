@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Basic Layout</title>
+  <style>
+    * { margin : 0;padding: 0; box-sizing: border-box;}
+    body { 
+      max-width: 1200px;
+      margin: auto;
+    }
+    header {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+    }
+    main {
+      background-color: thistle;
+      background-image: url(https://picsum.photos/id/1015/1200);
+      height: 80vh;
+      display : flex;
+    }
+    main > * {
+      /* outline: 1px dashed salmon; */
+      height : 100%;
+      flex : 1;
+    }
+    .main-c {
+      flex: 4 ; 
+      text-align: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 230, 0, 0.7);
+    }
+    .main-l {
+      background-color: rgba(238, 130, 238, 0.527);
+    }
+    .main-r {
+      background-color: rgba(238, 130, 238, 0.527);
+    }
+    footer {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+    }
+  </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+      <div class="main-l"></div>
+      <div class="main-c">
+        <h1>Title</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum nostrum cupiditate natus rem qui. Maiores autem optio provident fuga totam cum illum voluptates error accusamus!</p>
+      </div>
+      <div class="main-r"></div>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
+

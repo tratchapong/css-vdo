@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Background Lab</title>
+  <style>
+    body{
+      height: 200vh;
+    }
+    .box {
+      background-image: url(https://picsum.photos/id/1000/800);
+      background-attachment: fixed;
+      color:deeppink;
+      width: 800px;
+      height: 200px;
+      margin-top: 600px;
+    }
+    .box2 {
+      background-image: url(https://picsum.photos/id/1000/800);
+      /* background-attachment: fixed; */
+      color:deeppink;
+      width: 800px;
+      height: 200px;
+      background-position: center center;
+    }
+
+    .picbox {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .picbox img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>TEST Picture background in HTML Body</h2>
+  <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, rerum.</div>
+  <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, fugiat!</div>
+  <hr>
+  <!-- <div class="picbox">
+    <img src="https://picsum.photos/id/1000/800" alt="">
+  </div> -->
+</body>
+</html>

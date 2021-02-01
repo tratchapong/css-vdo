@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex : before flex layout</title>
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box;}
+.container {
+  position: relative;
+  outline: 1px solid lime;
+  height: 100px;
+  margin-top: 5px;
+}
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed red;
+  display: inline-block;
+}
+.logo{
+  /* right: calc(100vw - 100px); */
+  left: 0;
+}
+.link {
+  /* left: calc(100vw - 100px); */
+  right: 0;
+}
+.title {
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+</style>
+</head>
+<body>
+  <body>
+    <div class="container">
+      <div class="box logo">logo</div>
+      <div class="box title">Title</div>
+      <div class="box link">Link</div>
+    </div>
+</body>
+</html>

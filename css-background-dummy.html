@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Background Lab</title>
+  <style>
+    body{
+      height: 200vh;
+    }
+    .box {
+      background-image: url(https://picsum.photos/id/1000/800);
+      color:deeppink;
+      background-size: contain;
+      width: 800px;
+      height: 200px;
+      margin : 10px 0;
+    }
+    .box:nth-of-type(2) {
+      height:400;
+      background-size: cover;
+      /* background-position: center right; */
+    }
+    .picbox {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+    .picbox img {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>TEST Picture background in HTML Body</h2>
+  <div class="box">Background-size : contain</div>
+  <div class="box">Background-size : cover</div>
+  <hr>
+  <div class="picbox">
+    <img src="https://picsum.photos/id/1000/800" alt="">
+  </div>
+</body>
+</html>

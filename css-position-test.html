@@ -1,0 +1,42 @@
+<!-- from Kevin Powell channel : https://www.youtube.com/watch?v=P6UgYq3J3Qs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Test</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      outline: 1px dashed red;
+      display: inline-block;
+    }
+    .thebox {
+      position : relative;
+      background : #abc8;
+      top : 20px;
+      left : 30px;
+    }
+    main {
+      width: 500px;
+      height: 300px;
+      background-color: #def;
+    }
+    .thebox:nth-child(4) {
+      background-color: #9528;
+    }
+  </style>
+</head>
+<body>
+  <h2>Header</h2>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, dignissimos.</p>
+  <main>
+    <div>box1</div>
+    <div class='thebox'>box2</div>
+    <div>box3</div>
+    <div class="thebox">box4</div>
+  </main>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aliquam voluptatum soluta cupiditate labore, aspernatur ut consequatur nobis fugiat libero suscipit necessitatibus consectetur, ducimus animi odio explicabo veritatis officia quaerat.</p>
+</body>
+</html>

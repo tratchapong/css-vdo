@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex lab 02 - Layout with multi-line flex</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box;}
+    .container {
+      display: flex;
+      align-content: flex-start;
+      flex-flow: row wrap;
+      width: 95vw;
+      height: 99vh;
+      background-color: deeppink;
+      margin: 0vh auto;
+      font-size: 30px;
+      max-width: 1000px;
+    }
+    .container > * {
+      background-color: lime;
+      margin: 2px;
+      padding: 20px;
+    }
+    .item1, .item2 {
+      flex : 1 45%; 
+    }
+    .item3, .item4, .item5 {
+      flex : 1 30%;
+    }
+    .item6 {
+      flex : 1 10%;
+      height: 50%
+    }
+    .item7 {
+      flex : 1 80%;
+    }
+    .item8 {
+      flex : 1 100%;
+    }
+       
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item1">01</div>
+    <div class="item2">02</div>
+    <div class="item3">03</div>
+    <div class="item4">04</div>
+    <div class="item5">05</div>
+    <div class="item6">06</div>
+    <div class="item7">07</div>
+    <div class="item8">08</div>
+  </div>
+</body>
+</html>
