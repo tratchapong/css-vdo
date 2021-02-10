@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Flex Lab 02</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    body{
+      max-width: 1200px;
+      margin: auto;
+      /* scroll-behavior: smooth; */
+    }
+    header {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .navigation {
+      display: flex;
+      list-style: none;
+      margin: 0; 
+      background: rgba(0, 191, 255, 0.3);
+    }
+    .navigation a { 
+      text-decoration: none;
+      display: block;
+      padding: 0.5em;
+      color: white;
+    }
+    .navigation a:hover {
+      background: #1565C0;
+    }
+    main{
+      background-color: teal;
+      background-image: url(https://picsum.photos/id/1015/1200);
+      height: 80vh;
+      display : flex;
+      flex-wrap: wrap;
+      overflow: scroll;
+      scroll-behavior: smooth;
+    }
+    main::-webkit-scrollbar {
+    display: none;
+}
+    main > * {
+      /* outline: 1px dashed lime; */
+      flex : 1;
+      padding: 5px;
+    }
+    .main-l {
+      flex-basis: 100px;
+      background-color: rgba(238, 130, 238, 0.527);
+      position : sticky;
+      top: 0;
+    }
+    .main-r {
+      flex-basis: 100px;
+      background-color: rgba(238, 130, 238, 0.527);
+      position : sticky;
+      top: 0;
+    }
+    .main-c {
+      flex: 4 500px;
+      text-align: center;
+      height: 100%;
+    }
+    .main-c > div {
+      padding: 10px 30px;
+      margin: 60px -5px;
+      height: 105%;
+      text-align: left;
+    }
+    .main-c > div:nth-child(odd) {
+      background-color: rgba(255, 228, 196, 0.349);
+      color: rgba(25, 0, 255, 0.561);
+    }
+
+    footer {
+      background: rgb(91, 91, 199,0.8);
+      height: 10vh;
+      color: rgba(245, 245, 245, 0.678);
+      font-size: 12px;
+    }
+    @media (max-width: 700px) {
+      .navigation {
+        width: 100%;
+        justify-content: space-around;
+      }
+      .main-l, .main-r {
+        position: static;
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      header {
+        height: auto;
+        text-align: center;
+        position: sticky;
+        top:0;
+      }
+      .navigation{
+        flex-flow: column;
+      }
+      .navigation li {
+        border-bottom: 1px solid rgba(245, 245, 245, 0.774);
+      }
+      main { height: auto;}
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <ul class="navigation">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <div class="main-l">
+      <h2>News</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis iure aspernatur numquam in voluptates aut.</p>
+    </div>
+    <div class="main-c">
+      <h1>Title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis voluptas sequi accusantium doloribus repellendus ex error doloremque itaque amet, illo soluta veniam dolorum nobis.</p>
+      <div id="home">
+        <h3>Home</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis voluptas sequi accusantium doloribus repellendus ex error doloremque itaque amet, illo soluta veniam dolorum nobis. </p>
+      </div>
+      <div id="about">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reiciendis voluptas sequi accusantium doloribus repellendus ex error doloremque itaque amet, illo soluta veniam dolorum nobis.</p>
+      </div>
+      <div id="products">
+        <h3>Products</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatum assumenda saepe non nisi ab illum, quas reprehenderit blanditiis tempore expedita similique laudantium! Repudiandae et labore architecto porro. Recusandae, incidunt?</p>
+      </div>
+      <div id="contact">
+        <h3>contact</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, sit! Eligendi, provident amet sit illum hic cum id voluptates cumque a! Distinctio laboriosam aspernatur commodi.</p>
+      </div>
+
+    </div>
+    <div class="main-r">
+      <h3>Ads</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores voluptatum quisquam. Ratione facere aliquid harum adipisci. Molestias labore facere cumque nam inventore fuga reiciendis?</p>
+    </div>
+  </main>
+  <footer>Copyright by Ratchapong T.</footer>
+  
+</body>
+</html>
